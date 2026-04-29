@@ -1,0 +1,66 @@
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form input,
+.form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.form button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form button:hover {
+  background-color: var(--primary-hover);
+}
+.fromGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.modal {
+  position: fixed; /* מקבע את התיבה למסך */
+  top: 50%; /* מרכז מלמעלה */
+  left: 50%; /* מרכז מהצד */
+  transform: translate(-50%, -50%); /* דיוק המרכוז */
+  background: white; /* צבע רקע של התיבה */
+  z-index: 1000; /* דואג שהיא תהיה בשכבה הכי עליונה */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* צל שייתן תחושת גובה */
+}
+.button {
+  background-color: #25acd6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #218838;
+}
+
+/* כפתור ביטול בתוך הטופס */
+.button[type="button"] {
+  background-color: #6c757d; /* אפור */
+  margin-right: 10px;
+}

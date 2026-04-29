@@ -1,15 +1,110 @@
+/* קונטיינר הפוסט */
 .container {
-  border: 1px solid #ccc;
-  padding: 16px;
-  margin: 16px 0;
-  background-color: gray;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 20px auto;
+  max-width: 500px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eef2f6;
+  transition: transform 0.2s ease;
 }
+
+.container:hover {
+  transform: translateY(-2px);
+}
+
+/* כותרת השם */
 .author {
-  font-size: 1.5em;
-  margin-bottom: 8px;
-  color: #1cd761;
+  margin-top: 0;
+  color: #2c3e50;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-bottom: 2px solid #f0f4f8;
+  padding-bottom: 10px;
 }
+
+/* תוכן הפוסט */
 .content {
-  font-size: 1.2em;
-  color: #aedac7;
+  color: #546e7a;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin: 15px 0 25px 0;
+}
+
+/* סקציית העריכה */
+.editSection {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #f8fafc;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* עיצוב ה-Input */
+.input {
+  padding: 12px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: #3498db;
+}
+
+/* עיצוב כפתורים כללי */
+.button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  background-color: #3498db;
+  color: white;
+  margin-right: 8px;
+}
+
+.button:hover {
+  background-color: #2980b9;
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+}
+
+/* כפתור ביטול (אופציונלי להוסיף קלאס נפרד או להשתמש בזה) */
+.button:last-child {
+  background-color: #3573cb;
+}
+
+.button:last-child:hover {
+  background-color: #1454ad;
+}
+
+/* כפתור כללי */
+.button {
+  background-color: #4a90e2; /* כחול */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #357abd; /* כחול כהה יותר במעבר עכבר */
+}
+
+/* כפתור מחיקה ספציפי (אם הוספת לו קלאס נוסף) */
+.deleteBtn {
+  background-color: #ff4d4d; /* אדום */
+}
+
+.deleteBtn:hover {
+  background-color: #cc0000;
 }
